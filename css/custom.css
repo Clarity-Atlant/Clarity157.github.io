@@ -1,0 +1,65 @@
+table th {
+    padding: 0px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black !important;
+}
+
+table th {
+    border: 1px solid black !important;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid black !important;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Очень сложно сделать, чтобы бордеры не дублировались. */
+@media (max-width: 576px) {
+    table.transp {
+        margin: 0 auto;
+        border: none !important;
+    }
+    table.transp thead {
+        display: flex;
+        justify-content: center;
+    }
+    table.transp tbody {
+        display: flex;
+        justify-content: center;
+    }
+    table.transp tbody tr {
+        width: 100%;
+    }
+    table.transp .label {
+        height: 40px;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    table.transp tr,
+    table.transp thead {
+        display: block;
+        float: left;
+    }
+    table.transp tr td,
+    table.transp tr th {
+        display: block;
+    }
+    /* table.transp tr:first-child {
+        border-right: 2px solid #ffffff;
+        border-bottom: 0px;
+        height: 100%;
+        color: white;
+        text-align: left;
+        line-height: 31px;
+        padding-right: 14px;
+    } */
+}

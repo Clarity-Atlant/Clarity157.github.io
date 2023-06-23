@@ -1,17 +1,39 @@
-table th {
-    padding: 0px;
+.swiper-testimonial__slide {
+  text-decoration: none !important;
 }
-
-table {
-    width: 100%;
-    border: 1px solid black !important;
+.swiper-testimonial__text {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
 }
-
-table th {
-    border: 1px solid black !important;
-    text-align: center;
+@media (min-width: 1200px) {
+  .swiper-testimonial__text {
+    font-size: 20px;
+  }
 }
-
-table td {
-    border: 1px solid black !important;
+.swiper-testimonial__img {
+  width: 100%;
 }
+.swiper-testimonial__nav {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .swiper-testimonial__nav {
+    margin-top: 30px;
+  }
+}
+.swiper-testimonial__button {
+  position: relative;
+  z-index: 1;
+}
+.swiper-testimonial__button:after {
+  content: none;
+}/*# sourceMappingURL=main.css.map */

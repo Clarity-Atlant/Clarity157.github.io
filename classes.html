@@ -5,26 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect World</title>
+    <link rel="stylesheet" href="/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="/css/u-bootstrap/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/u-bootstrap/u-bootstrap5.min.css"> -->
+    <link rel="stylesheet" href="/css/u-bootstrap/u-bootstrap5.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4">Perfect World</span>
-          </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/index.html" class="nav-link">Персонажи</a></li>
-            <li class="nav-item"><a href="/dungeons.html" class="nav-link">Данжи</a></li>
-            <li class="nav-item"><a href="/classes.html" class="nav-link active" aria-current="page">Классы</a></li>
-            <li class="nav-item"><a href="/interactive-actions.html" class="nav-link">Взаимодействия</a></li>
-            <li class="nav-item"><a href="/items.html" class="nav-link">Предметы</a></li>
-          </ul>
+    <div class="container u-overflow-hidden">
+        <header class="u-d-flex u-flex-wrap u-justify-content-center u-py-3 u-mb-4 u-border-bottom">
+            <a href="/" class="u-d-flex u-align-items-center u-mb-3 u-mb-md-0 u-me-md-auto u-text-dark u-text-decoration-none">
+              <svg class="bi u-me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <span class="u-fs-4">Perfect World</span>
+            </a>
+      
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="/index.html" class="nav-link">Персонажи</a></li>
+              <li class="nav-item"><a href="/dungeons.html" class="nav-link">Данжи</a></li>
+              <li class="nav-item"><a href="/classes.html" class="nav-link active" aria-current="page">Классы</a></li>
+              <li class="nav-item"><a href="/interactive-actions.html" class="nav-link">Взаимодействия</a></li>
+              <li class="nav-item"><a href="/items.html" class="nav-link">Предметы</a></li>
+            </ul>
         </header>
+        <h1 class="u-text-center u-mb-5">Классы персонажей</h1>
+        <div class="swiper js-swiper-testimonials u-position-relative swiper-testimonial">
+            <div class="swiper-wrapper">
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Атланта.jpg" data-fancybox="gallery" data-caption="Страж">
+                    <img class="swiper-testimonial__img" src="img/Атланта.jpg" alt="Страж">
+                    <div class="swiper-testimonial__text">Страж</div>
+                    <ul>
+                        <li>- Отличается повышенной живучестью;</li>
+                        <li>- Имеет много физической защиты;</li>
+                        <li>- Довольно быстро перемещается;</li>
+                        <li>- Полезен в группе за счёт своих умений.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Арасёна.jpg" data-fancybox="gallery" data-caption="Жрец">
+                    <img class="swiper-testimonial__img" src="img/Арасёна.jpg" alt="Жрец">
+                    <div class="swiper-testimonial__text">Жрец</div>
+                    <ul>
+                        <li>- Умеет лечить себя и союзников;</li>
+                        <li>- Имеет много магической защиты;</li>
+                        <li>- Может воскрешать упавших союзников;</li>
+                        <li>- Способен усыплять противников.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Симилита.jpg" data-fancybox="gallery" data-caption="Маг">
+                    <img class="swiper-testimonial__img" src="img/Симилита.jpg" alt="Маг">
+                    <div class="swiper-testimonial__text">Маг</div>
+                    <ul>
+                        <li>- Обладает множеством зрелищных умений;</li>
+                        <li>- Может подлечивать себя и других;</li>
+                        <li>- Эффективен, когда быстро применяет заклинания;</li>
+                        <li>- Имеет высокую магическую атаку.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Персиана.jpg" data-fancybox="gallery" data-caption="Стрелок">
+                    <img class="swiper-testimonial__img" src="img/Персиана.jpg" alt="Стрелок">
+                    <div class="swiper-testimonial__text">Стрелок</div>
+                    <ul>
+                        <li>- Простой и удобный класс;</li>
+                        <li>- Умеет ставить ловушки;</li>
+                        <li>- Умения применяет довольно быстро;</li>
+                        <li>- Силён в ПвП при хорошей экипировке.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Саория.jpg" data-fancybox="gallery" data-caption="Призрак">
+                    <img class="swiper-testimonial__img" src="img/Саория.jpg" alt="Призрак">
+                    <div class="swiper-testimonial__text">Призрак</div>
+                    <ul>
+                        <li>- Может комбинировать различные умения;</li>
+                        <li>- Умеет брать умения у других классов;</li>
+                        <li>- Способен наносить большой физический дамаг;</li>
+                        <li>- Может прыгать от цели до цели.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Инанелия.jpg" data-fancybox="gallery" data-caption="Друид">
+                    <img class="swiper-testimonial__img" src="img/Инанелия.jpg" alt="Друид">
+                    <div class="swiper-testimonial__text">Друид</div>
+                    <ul>
+                        <li>- Может приручать и использовать боевых питомцев;</li>
+                        <li>- Умеет снимать полезные эффекты с противников;</li>
+                        <li>- Способна атаковать противников стихией дерева;</li>
+                        <li>- Умеет превращаться в лису.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Кларити.jpg" data-fancybox="gallery" data-caption="Жнец">
+                    <img class="swiper-testimonial__img" src="img/Кларити.jpg" alt="Жнец">
+                    <div class="swiper-testimonial__text">Жнец</div>
+                    <ul>
+                        <li>- Может превращаться в изменённую форму;</li>
+                        <li>- Умеет атаковать противников стихиями металла и воды;</li>
+                        <li>- Полезен за счёт своих ослабляющих умений;</li>
+                        <li>- Может применять умения на ходу.</li>
+                    </ul>
+                </a>
+                <a class="u-color-hover-primary swiper-slide swiper-testimonial__slide" href="img/Миша.jpg" data-fancybox="gallery" data-caption="Воин">
+                    <img class="swiper-testimonial__img" src="img/Миша.jpg" alt="Воин">
+                    <div class="swiper-testimonial__text">Воин</div>
+                    <ul>
+                        <li>- Владеет мечами, топорами, копьями и кастетами;</li>
+                        <li>- Может усилить урон всех членов команды по боссу в 2 раза;</li>
+                        <li>- Обладает высокой живучестью и физической защитой;</li>
+                        <li>- Летает на мечах и подобных им полётах.</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+        <div class="u-position-relative">
+			<div class="swiper-testimonial__nav">
+				<div class="swiper-button-prev swiper-testimonial__button swiper-testimonial__button--prev u-me-5"><img src="/img/ico/ico-slide--left.svg"></div>
+				<div class="swiper-button-next swiper-testimonial__button swiper-testimonial__button--next u-ms-5"><img src="/img/ico/ico-slide--right.svg"></div>
+			</div>
+        </div>
     </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

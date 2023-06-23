@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect World</title>
     <link rel="stylesheet" href="/css/u-bootstrap/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/u-bootstrap/u-bootstrap5.min.css"> -->
+    <link rel="stylesheet" href="css/u-bootstrap/u-bootstrap5.min.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4">Perfect World</span>
+        <header class="u-d-flex u-flex-wrap u-justify-content-center u-py-3 u-mb-4 u-border-bottom">
+          <a href="/" class="u-d-flex u-align-items-center u-mb-3 u-mb-md-0 u-me-md-auto u-text-dark u-text-decoration-none">
+            <svg class="bi u-me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="u-fs-4">Perfect World</span>
           </a>
     
           <ul class="nav nav-pills">
@@ -25,6 +25,97 @@
             <li class="nav-item"><a href="/items.html" class="nav-link active" aria-current="page">Предметы</a></li>
           </ul>
         </header>
+        <div class="container py-3">          
+            <main>
+              <!-- Нужно ли использовать row-cols-xxl-3? Проблема в искажении карточек на ширинах до 1400px. -->
+              <div class="row row-cols-1 row-cols-xxl-3 u-mb-3 u-text-center">
+                <div class="col">
+                  <div class="card u-mb-4 u-rounded-3 u-shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Рупор</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">16748<small class="text-muted fw-light"> золота</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Даёт активность в мир-чате</li>
+                        <li>Необходим при сборах в данжи</li>
+                        <li>Нужен для набора в клан</li>
+                        <li>Стоит весьма дёшево</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-outline-primary">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card u-mb-4 u-rounded-3 u-shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Идеальный горн</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">1449000<small class="text-muted fw-light"> золота</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Позволяет крикнуть в особый чат</li>
+                        <li>Сообщение будет видно всем игрокам на сервере</li>
+                        <li>Часто используется для набора в клан</li>
+                        <li>Можно менять цвет сообщения</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card u-mb-4 u-rounded-3 u-shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                      <h4 class="my-0 fw-normal">Идеальный межсерверный горн</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">79260000<small class="text-muted fw-light"> золота</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Позволяет крикнуть на все серверы</li>
+                        <li>Этот крик увидят все игроки в сети</li>
+                        <li>Используется для выражения сильных эмоций</li>
+                        <li>Горн использует особые смайлики</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Свиток воскрешения</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">50000<small class="text-muted fw-light"> серебра</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Позволяет воскресить персонажа на месте</li>
+                        <li>Даётся каждый месяц бесплатно по 5 штук</li>
+                        <li>Порой без него очень трудно</li>
+                        <li>Не нужно просить жреца воскресить</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                      <h4 class="my-0 fw-normal">Фрагмент Колеса Судьбы</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">8940000<small class="text-muted fw-light"> золота</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Нужен для изготовления сильной брони</li>
+                        <li>Эта броня может быть полезна любому классу</li>
+                        <li>Уровень этой брони - 17.</li>
+                        <li>Этих предметов нужно по 100 штук</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+          
     </div>
 </body>
 </html>
