@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect World</title>
+    <link rel="stylesheet" href="/css/u-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/u-bootstrap/u-bootstrap5.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <header class="u-d-flex u-flex-wrap u-justify-content-center u-py-3 u-mb-4 u-border-bottom">
+            <a href="/" class="u-d-flex u-align-items-center u-mb-3 u-mb-md-0 u-me-md-auto u-text-dark u-text-decoration-none">
+              <svg class="bi u-me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <span class="u-fs-4">Perfect World</span>
+            </a>
+      
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="/index.html" class="nav-link">Персонажи</a></li>
+              <li class="nav-item"><a href="/dungeons/page1.html" class="nav-link">Данжи</a></li>
+              <li class="nav-item"><a href="/classes.html" class="nav-link">Классы</a></li>
+              <li class="nav-item"><a href="/interactive-actions.html" class="nav-link">Взаимодействия</a></li>
+              <li class="nav-item"><a href="/items.html" class="nav-link">Предметы</a></li>
+              <li class="nav-item"><a href="/create.html" class="nav-link active" aria-current="page">Создать персонажа</a></li>
+            </ul>
+        </header>
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Имя персонажа</label>
+              <input name="name" type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Класс персонажа</label>
+              <select name="class" class="form-control" id="exampleFormControlSelect1">
+                <option>Воин</option>
+                <option>Маг</option>
+                <option>Оборотень</option>
+                <option>Друид</option>
+                <option>Жрец</option>
+                <option>Лучник</option>
+                <option>Шаман</option>
+                <option>Страж</option>
+                <option>Призрак</option>
+                <option>Жнец</option>
+                <option>Стрелок</option>
+                <option>Паладин</option>
+                <option>Странник</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Выбор экипировки</label>
+              <select name="equipment" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Корона мага небес</option>
+                <option>Длань, управляющая тучами</option>
+                <option>Знак восьмого звания</option>
+                <option>Око джунглей</option>
+                <option>Лунное серебро</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Дополнительные пожелания по персонажу</label>
+              <textarea name="additional" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label name="plan" for="exampleFormControlFile1">Прикрепи план развития персонажа</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <button type="submit" class="btn btn-primary">Создать персонажа</button>
+        </form>
+    </div>
+</body>
+</html>

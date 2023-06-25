@@ -1,0 +1,50 @@
+.pagination {
+	display: flex;
+	align-items: center;
+
+	&__nav {
+		font-size: 0;
+		padding: 0;
+		width: 47px;
+
+		& path {
+			transition: .3s;
+		}
+
+		&:hover {
+			& path {
+				stroke: #00B45E;
+			}
+		}
+	}
+
+	&__list-item {
+		&-link {
+			text-decoration: none !important;
+			padding: 10px 14px;
+			margin-right: 10px;
+			border-radius: 10px;
+			border: 1px solid transparent;
+
+			&--active {
+				background-color: $color-secondary;
+			}
+
+			&:hover {
+				border: 1px solid $color-secondary;
+			}
+		}
+		&:first-child &-link:hover,
+		&:last-child &-link:hover,
+		&:first-child &-link,
+		&:last-child &-link {
+			border: none;
+		}
+	}
+
+	&__list {
+		display: flex;
+		padding: 0;
+		list-style-type: none;
+	}
+}
