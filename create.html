@@ -27,7 +27,25 @@
               <li class="nav-item"><a href="/create.html" class="nav-link active" aria-current="page">Создать персонажа</a></li>
             </ul>
         </header>
-        <form>
+        <section class="u-py-4" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="breadcrumbs">
+                    <div class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                      <a class="breadcrumbs__link" href="/index.html" itemprop="item"><span itemprop="name">Главная</span></a>
+                      <meta itemprop="position" content="0">
+                    </div>
+                    <div class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                      <span class="breadcrumbs__text" itemprop="name">Создать персонажа</span>
+                      <meta itemprop="position" content="1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <form class="u-p-5 u-bg-secondary">
             <div class="form-group">
               <label for="exampleFormControlInput1">Имя персонажа</label>
               <input name="name" type="text" class="form-control" id="exampleFormControlInput1">
@@ -52,7 +70,7 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect2">Выбор экипировки</label>
-              <select name="equipment" multiple class="form-control" id="exampleFormControlSelect2">
+              <select name="equipment" multiple size="10" class="form-control" id="exampleFormControlSelect2">
                 <option>Корона мага небес</option>
                 <option>Длань, управляющая тучами</option>
                 <option>Знак восьмого звания</option>

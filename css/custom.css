@@ -21,6 +21,10 @@ ul {
     list-style-type: none;
 }
 
+select {
+    overflow-y: hidden;
+}
+
 /* Очень сложно сделать, чтобы бордеры не дублировались. */
 @media (max-width: 576px) {
     table.transp {
