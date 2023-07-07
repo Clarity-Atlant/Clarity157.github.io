@@ -1,0 +1,99 @@
+.o-button {
+	color: $color-text;
+	font-size: 16px;
+	background-color: $color-secondary;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	transition: .3s;
+	border-radius: 0 0 10px 10px;
+	cursor: pointer;
+    width: 100%;
+    @media (min-width: $lg) {
+        width: calc(100% - 24px);
+    }
+	border: 2px solid $color-secondary;
+
+	&:hover {
+		text-decoration: none;
+		color: $color-text;
+		background-color: $color-secondary-hover;
+	}
+
+	&--primary-transparent {
+		background-color: transparent;
+		border: 2px solid $color-primary;
+		color: $color-primary;
+
+		&:hover {
+		background-color: $color-primary !important;
+		color: #fff !important;
+		}
+	}
+
+	&--white-transparent {
+		background-color: transparent;
+		border: 2px solid white;
+		color: white;
+
+		&:after {
+		background-image: url('../img/ico/ico-arrow-btn--white.svg') !important;
+		}
+
+		&:hover {
+		background-color: white !important;
+		color: $color-primary !important;
+
+		&:after {
+			content: '';
+			background-image: url('../img/ico/ico-arrow-btn.svg') !important;
+		}
+		}
+	}
+
+	&--arrow {
+		padding: 10px 15px !important;
+		font-size: 16px !important;
+
+		@media (min-width: $lg) {
+		padding: 15px 20px !important;
+		}
+
+		&:after {
+		content: '';
+		background-image: url('../img/ico/ico-arrow-btn.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 32px;
+		height: 12px;
+		margin-left: 13px;
+		}
+
+		&:hover {
+		background-color: $color-primary;
+		color: white;
+
+		&:after {
+			content: '';
+			background-image: url('../img/ico/ico-arrow-btn--white.svg');
+		}
+	}
+}
+
+	@media (min-width: $lg) {
+		padding: 18px 30px;
+		font-size: 18px;
+	}
+
+	&--min {
+		padding: 10px 15px;
+
+		@media (min-width: $lg) {
+			padding: 12px 14px;
+		}
+	}
+}
+.o-button.submit {
+	padding: 15px 10px;
+	height: 52px;
+}
