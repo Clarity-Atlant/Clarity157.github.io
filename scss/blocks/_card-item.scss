@@ -15,28 +15,52 @@
         flex: 1 1 auto;
     }
     &__body {
+        position: relative;
         display: flex;
         flex-direction: column;
         padding: 20px;
         border: 1px solid gray;
     }
     &__button {
-        position: relative; // Без этого не отработает z-index.
-        z-index: 1000;
+        // position: relative; // Без этого не отработает z-index.
+        // z-index: 1000;
+        // @media (min-width: $lg) {
+        //     display: none;
+        // }
         @media (min-width: $lg) {
             display: none;
         }
+        width: calc(100% + 2px);
+        height: 50px;
+        line-height: 50px;
+        background-color: orange;
+        text-decoration: none;
+        color: #fff;
+        position: absolute;
+        left: -1px;
+        top: 100%;
+        border-radius: 0 0 10px 10px;
+        z-index: 1;
+        .card-item__body:hover & {
+            display: block;
+        }
+    }
+    &__model {
+        display: none;
+    }
+    &:hover &__model {
+        display: block;
     }
     &__name {
         flex: 1 1 auto;
     }
-    &:hover &__button {
-        display: block;
-        position: absolute; // Без этого карточки прыгают при ховере. Если под карточками нет никакого контента, то они всё равно могут прыгать.
-    }
-    &__hover {
-        &:hover {
-            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-        }
-    }
+    // &:hover &__button {
+    //     display: block;
+    //     position: absolute; // Без этого карточки прыгают при ховере. Если под карточками нет никакого контента, то они всё равно могут прыгать.
+    // }
+    // &__hover {
+    //     &:hover {
+    //         box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    //     }
+    // }
 }

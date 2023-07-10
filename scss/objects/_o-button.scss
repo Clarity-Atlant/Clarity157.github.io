@@ -9,9 +9,9 @@
 	border-radius: 0 0 10px 10px;
 	cursor: pointer;
     width: 100%;
-    @media (min-width: $lg) {
-        width: calc(100% - 24px);
-    }
+    // @media (min-width: $lg) {
+    //     width: calc(100% - 24px);
+    // }
 	border: 2px solid $color-secondary;
 
 	&:hover {
